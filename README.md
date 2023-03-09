@@ -45,3 +45,5 @@ assistant should be able to answer to commands like
 
 Intent definitions for other languages can be added by writing the respective 
 sentences.ini files.
+
+

@@ -19,8 +19,7 @@
 #      (maybe not neeeded?)
 #
 [global]
-this_skill_name = TEMPLATE_SKILL
-
+this_skill_name = SusiDateTime
 
 
 # These sections are for sentences and sentence snippets
@@ -29,33 +28,30 @@ this_skill_name = TEMPLATE_SKILL
 # publish_say(:skill_echo, "my new skill")
 #
 [de]
-:skill_echo =  Hallo, ich bin die Hermes-Skill
-:slot_echo_1 = der Wert des Slots
-:slot_echo_2 = ist
-:end_say =     das wars
-:ask_echo_slots = soll ich die Slots des Intent aufsagen?
-:no_slots =    der Intent hat keine Slots
+:tell_time = es ist
+:tell_time = es ist jetzt
+:tell_time = es ist gerade
+:tell_time = jetzt ist es
+:tell_time = die aktuelle Uhrzeit ist
 
-# rules to identify falsedetection of intents by the
+:tell_date = heute ist der
+:tell_date = das heutige Datum ist der
+
+# rules to identify false detection of intents by the
 # NLU can be added in the section of each language.
 # If the voice command matches one of the rules, it is accepted.
 # Only if it matches none of the rules, the action is aborted
 # because of false detection!
 #
-# SayTime:must_include = spät, ist
-# SayTime:must_chain = spät, es, ist
-# SayTime:must_chain = spät, ist, es
-# SayTime:must_span = spät, bitte
+# Susi:TellTime:must_include = Zeit
 
 [en]
-:skill_echo =  hello, i am the Hermes skill
-:slot_echo_1 = the value of the slot
-:slot_echo_2 = is
-:end_say =     and done
-:ask_echo_slots = do you want me to list the slots of this intent?
-:no_slots =    the intent has no slots
+:tell_time = it is now
+:tell_time = it is
+:tell_time = the current time is
+:tell_time = the time is
 
-# SayTime:must_include = time, is
-# SayTime:must_chain = what, is
-# SayTime:must_span = can, time, (is|is please)
+:tell_date = today is the
+:tell_date = the current date is the
+
 
